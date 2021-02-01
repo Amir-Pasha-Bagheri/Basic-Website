@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="AddComment.js"></script>
+    <style>
+      a:hover{
+        text-decoration: none;
+      }
+    </style>
+  </head>
+<body>
+
+  <!--WELCOME TO WEBSITE-->
+
+  <div href="#" class="alert alert-dismissible alert-secondary fade show"><h2>Welcome To My Website<button class="close w-10" data-dismiss="alert">&times;</button></h2></div>
+
+  <!--STICKY NAVBAR-->
+
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top my-2 shadow-sm">
+    <a href="#" class="navbar-brand mr-4">MY WEBSITE</a>
+    <button class="collapsed navbar-toggler" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span></button>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active mx-4"><a class="nav-link" href="#">Home Page</a></li>
+        <li class="nav-item mx-4"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item mx-4 dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Contact Us</a>
+          <div class="dropdown-menu"><button class="dropdown-item">e-mail</button><button class="dropdown-item">Phone Number</button></div>
+        </li>
+        <li class="nav-item mx-4"><a class="nav-link" href="#">Help</a></li>
+      </ul>
+        <form class="form-inline">
+          <input type="text" name="Search" class="form-control mx-2" placeholder="Search">
+        </form>
+        <button type="button" value="Search" class="btn btn-success">Search</button>
+    </div>
+  </nav>
+
+  <!--ADDS-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 bg-secondary rounded-0 justify-content-center" style="height: 600px;"><h2>Some Adds</h2><hr/></div>
+
+  <!--CAROUSEL-->
+      <div class="col-md-9">
+        <div class="carousel slide" data-ride="carousel" id="myPictures">
+          <ul class="carousel-indicators">
+            <li data-target="#myPictures" data-slide-to="0" class="active"></li>
+            <li data-target="#myPictures" data-slide-to="1"></li>
+            <li data-target="#myPictures" data-slide-to="2"></li>
+            <li data-target="#myPictures" data-slide-to="3"></li>
+          </ul> 
+
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <img src="./IMAGES/trees.jpg" alt="Trees" height="600px" width="1400px">
+              <div class="carousel-caption">
+                <h3>Tree</h3>
+                <p>The Tree Is so Beautiful !</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="./IMAGES/house.jpg" alt="House" height="600px" width="1400px">
+              <div class="carousel-caption">
+                <h3>House</h3>
+                <p>The House Is So Scary !</p>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="./IMAGES/road.jpg" alt="Road" height="600px" width="1400px">
+              <div class="carousel-caption">
+                <h3>Road</h3>
+                <p>Where Is The Destination ?</p>
+              </div>
+            </div>
+      
+            <div class="carousel-item">
+              <img src="./IMAGES/sunset.jpg" alt="Sunset" height="600px" width="1400px">
+              <div class="carousel-caption">
+                <h3>Sunset</h3>
+                <p>Where Is My Lover ?</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#myPictures" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a class="carousel-control-next" href="#myPictures" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!--TOPICS-->
+  <div class="container-fluid my-1">
+    <div class="row">
+      <div class="col-md-3" style="height: 800px;">
+        <div id="accordion" style="width: 375px; margin-left: -13px;">
+          <div class="card"><div class="card-header"><a href="#firstTop" data-toggle="collapse">First Topic</a></div><div id="firstTop" class="collapse" data-parent="#accordion"><div class="card-body">Here Is first Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#secondTop" data-toggle="collapse">Second Topic</a></div><div id="secondTop" class="collapse" data-parent="#accordion"><div class="card-body">Hre Is Second Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#thirdTop" data-toggle="collapse">Third Topic</a></div><div class="collapse" id="thirdTop" data-parent="#accordion"><div class="card-body">Here Is Third Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#fourthTop" data-toggle="collapse">Fourth Topic</a></div><div class="collapse" id="fourthTop" data-parent="#accordion"><div class="card-body">Here Is Fourth Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#fifthTop" data-toggle="collapse">Fifth Topic</a></div><div class="collapse" id="fifthTop" data-parent="#accordion"><div class="card-body">Here Is Fifth Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#sixthTop" data-toggle="collapse">Sixth Topic</a></div><div class="collapse" id="sixthTop" data-parent="#accordion"><div class="card-body">Here Is Sixth Topic</div></div></div>
+          <div class="card"><div class="card-header"><a href="#seventhTop" data-toggle="collapse">Seventh Topic</a></div><div class="collapse" id="seventhTop" data-parent="#accordion"><div class="card-body">Here Is Seventh Topic</div></div></div>
+        </div>
+        <div class="my-5" style="height: 200px; background-color: cadetblue; bottom: 0%;">
+          <h3>Some Add</h3><hr/>
+        </div>
+      </div>
+
+  <!--ARTICLE-->
+  <div class="col-md-9" style="background-color: rgb(151, 141, 141); text-align: center;">
+    <h2>Article</h2><p>You Can Write Whatever You Want Here.</p>
+  </div>
+    </div>
+  </div>
+
+  <!--EMPTY SPACE-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3 bg-secondary" style="height:700px;"><h2>Some Other Things</h2><hr/></div>
+ 
+
+
+  <!--COMMENTS-->
+    <div class="col-md-9 float-right">
+      <h2 class="bg-success text-white px-3 py-3 rounded">Comments</h2>
+      <div class="media border p-3">
+        <div class="media-body" id="parentComment">
+          <h4>Sofie <small><i> 5th March 2020</i></small></h4><p>This website is so basic ! i think you need much exercise &#128530;</p>
+          <div class="media border p-3">
+            <div class="media-body">
+              <h4>John <small><i> 7th May 2020</i></small></h4><p>Are you okay ? this is just an exapmle :|</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  <!--ADD COMMENT-->
+    <h2 class="bg-primary text-white px-3 py-3 rounded">Add Comment</h2>
+    <form class="form">
+      <label for="name">Your Name : </label><input type="text" name="name" id="name" placeholder="Enter Your Name..." class="form-control">
+      <label for="text" class="pt-2">Write Your Message :</label><textarea name="text" id="text" placeholder="Write Your Message..." class="form-control" style="height: 100px; resize: none;"></textarea>
+    </form>
+    <button onclick="Added()" class="btn btn-warning my-2">Submit</button>
+
+    </div>
+  </div>
+</div>
+  <!--FOOTER-->
+  <div class="bg-danger" style="height: 200px; width: 100%; text-align: center;"><h2 class="pt-5">HERE IS THE FOOTER</h2></div>
+</body>
+</html>
